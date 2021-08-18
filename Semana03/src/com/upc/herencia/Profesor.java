@@ -1,6 +1,6 @@
 package com.upc.herencia;
 
-public class Profesor {
+public abstract class Profesor {
     private String dni;
     private String nombre;
     private int numeroHijos;
@@ -13,6 +13,8 @@ public class Profesor {
         this.nombre = nombre;
         this.numeroHijos = numeroHijos;
     }
+
+    public abstract double calcularSueldo();
 
     public String getDni() {
         return dni;
