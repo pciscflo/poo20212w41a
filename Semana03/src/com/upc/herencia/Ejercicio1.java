@@ -7,5 +7,7 @@ public class Ejercicio1 {
         System.out.println("Sueldo P. Completo:" + profesorTC1.calcularSueldo());
         System.out.println("Sueldo P. Parcial:" + profesorTP1.calcularSueldo());
 
+
+
     }
 }
