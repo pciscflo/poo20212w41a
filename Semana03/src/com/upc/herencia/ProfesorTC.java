@@ -11,7 +11,7 @@ public class ProfesorTC extends Profesor{
         this.porcAFP = porcAFP;
     }
 
-       public double calcularSueldo(){
+    public double calcularSueldo(){
         return this.sueldoBase - this.porcAFP*this.sueldoBase;
     }
 
