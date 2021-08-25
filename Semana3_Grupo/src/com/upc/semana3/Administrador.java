@@ -14,7 +14,22 @@ public class Administrador
 
     }
     public void registrarParticipante(Participante p){
-        lista_Participantes.add(p);
+        if (p.validarEdad()) {
+            lista_Participantes.add(p);
+        }else{
+            System.out.println("Es menor de edad, no permitido!");
+        }
+    }
+    public Participante obtenerGanador(){
+        double maximo = 0;
+        Participante mayor=null;
+        for(Participante p:lista_Participantes){
+            if(p.calcularPuntaje()>maximo){
+                maximo = p.calcularPuntaje();
+                mayor = p;
+            }
+        }
+        return mayor;
     }
 
 

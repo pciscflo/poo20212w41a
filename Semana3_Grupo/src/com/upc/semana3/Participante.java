@@ -16,8 +16,12 @@ public abstract class Participante
         this.cantidad_Mensaje_texto= cantidad_Mensaje_texto;
     }
     public boolean  validarLosCampos(){
-
-        return  false;
+        if(this.nombre!=null && this.apellido!=null && this.dni!=null &&
+                this.edad>0 && this.cantidad_Mensaje_texto>0){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     public boolean validarEdad(){

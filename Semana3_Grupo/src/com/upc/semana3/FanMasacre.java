@@ -15,7 +15,13 @@ public class FanMasacre extends Participante
     public double calcularPuntaje (){
         return getCantidad_Mensaje_texto()  *4+ puntajeBarra+ puntajeEquipo*2;
     }
-
+    public boolean  validarLosCampos(){
+        if(super.validarLosCampos() && this.equipo!=null && this.puntajeEquipo>0 && this.puntajeBarra>0){
+            return true;
+        }else {
+            return false;
+        }
+    }
 
     public String getEquipo() {
         return equipo;
