@@ -34,7 +34,7 @@ public class Ultramaritimos extends Envio{
         return (vol_metrico * 500 + (vol_metrico * 10 * getCategoria()) * 10);
     }
 
-    public String obtenerFila(){
+    public String obtenerFila(){ //la idea es no usar println en las clases modelo sólo en main
         return getCodigo()+ "  "+ getCodigoEmpresaContratante()+"   " + getNombreRepresentanteLegal() + "  " + getVolumenMetrico()+
                 "  " + getCategoria() + "  " + calcularCosto();
     }

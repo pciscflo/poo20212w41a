@@ -24,7 +24,7 @@ public class Maritimo extends Envio{
         return  (vol_metrico*100 + (vol_metrico*getCategoria())*25 );
     }
 
-    public String obtenerFila(){
+    public String obtenerFila(){//la idea es no usar println en las clases modelo sólo en main
         return getCodigo()+ "  "+ getRazonSocial() + "  " + getVolumenMetrico()+
         "  " + getCategoria() + "  " + calcularCosto();
     }

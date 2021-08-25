@@ -3,7 +3,7 @@ package com.upc.navieras;
 import java.util.List;
 import java.util.Scanner;
 
-public class Ejercicio3_Clase {
+public class EjercicioGrupalMain {
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -22,7 +22,7 @@ public class Ejercicio3_Clase {
         Maritimo envioMar3 = new Maritimo(99999, 100.50, 2, "Plaz VEA  Peru");
         jefe.registrarEnvio(envioMar3);
 
-        List<Envio> envios1 = jefe.obtenerEnviosPorTipo(Maritimo.class);
+        List<Envio> envios1 = jefe.obtenerEnviosPorTipo(Maritimo.class);//hay otras formas de resolver
         System.out.println("************ Maritimos *************");
         for(Envio e:envios1){
             System.out.println(e.obtenerFila());
