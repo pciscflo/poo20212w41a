@@ -14,10 +14,10 @@ public class Administrador
 
     }
     public void registrarParticipante(Participante p){//teorema de Liskov
-        if (p.validarEdad()) {
+        if (p.validarEdad() && p.validarLosCampos()) {
             lista_Participantes.add(p);
         }else{
-            System.out.println("Es menor de edad, no permitido!");
+            System.out.println("Es menor de edad, no permitido! o datos incorrectos!");
         }
     }
     public Participante obtenerGanador(){
