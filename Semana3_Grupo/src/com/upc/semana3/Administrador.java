@@ -13,7 +13,7 @@ public class Administrador
         lista_Participantes= new ArrayList<>();
 
     }
-    public void registrarParticipante(Participante p){
+    public void registrarParticipante(Participante p){//teorema de Liskov
         if (p.validarEdad()) {
             lista_Participantes.add(p);
         }else{
