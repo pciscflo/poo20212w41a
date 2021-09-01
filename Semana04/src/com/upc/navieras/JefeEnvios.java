@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JefeEnvios {
-    private List<Envio> envios;
+    private List<Envio> envios; // ArrayList<Envio> envios;//no es correcto
     private String nombre;
 
     public JefeEnvios() {
@@ -16,13 +16,15 @@ public class JefeEnvios {
         envios =  new ArrayList<>();
     }
 
-    public void registrarEnvio( Envio envio){
+    public void registrarEnvio(Envio envio){  //Envio <--- Maritimo o Utramaritimo // Liskov
         if( validarDuplicidad(envio) ) {
-            envios.add(envio);
+            this.envios.add(envio);
+
         }else {
             System.out.println("Codigo de Envio ya Registrado.");
         }
     }
+
     public boolean validarDuplicidad(Envio envio){
         for ( Envio e:envios ){
             if(envio.getCodigo() == e.getCodigo()){

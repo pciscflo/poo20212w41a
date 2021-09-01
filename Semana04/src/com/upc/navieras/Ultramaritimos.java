@@ -30,7 +30,7 @@ public class Ultramaritimos extends Envio{
     }
 
     public double calcularCosto() {
-        double vol_metrico = getVolumenMetrico();
+        double vol_metrico = this.getVolumenMetrico();
         return (vol_metrico * 500 + (vol_metrico * 10 * getCategoria()) * 10);
     }
 
