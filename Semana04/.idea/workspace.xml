@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25179da9-5614-471c-b5de-21c020528035" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/upc/navieras/JefeEnvios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upc/navieras/JefeEnvios.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/upc/navieras/Ultramaritimos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/upc/navieras/Ultramaritimos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,7 @@
       <updated>1630439445800</updated>
       <workItem from="1630439447786" duration="436000" />
       <workItem from="1630440001124" duration="666000" />
-      <workItem from="1630453672986" duration="4965000" />
+      <workItem from="1630453672986" duration="5717000" />
     </task>
     <task id="LOCAL-00001" summary="24.08.01">
       <created>1630439504531</created>
