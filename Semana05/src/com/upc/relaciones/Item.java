@@ -7,10 +7,17 @@ public class Item {
 
     public Item() {
     }
+
+    public Item(int numeroItem, int cantidad, Producto producto) {
+        this.numeroItem = numeroItem;
+        this.cantidad = cantidad;
+        this.producto = producto;
+    }
+
     public double calcularSubtotal(){
         return cantidad*producto.getPrecio();
     }
-
+    //teòrica para concordar con la composición
     public void asignarProducto(String codigo, String descripcion, double precio){
         this.producto = new Producto(codigo, descripcion, precio);
     }

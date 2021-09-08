@@ -9,20 +9,21 @@ public class Factura {
 
     public Factura() {
     }
+    public Factura(Cabecera cabecera) {
+        this.cabecera = cabecera;
+        this.items = new ArrayList<>();
+    }
 
     public void registrarItem(Item item){
           this.items.add(item);
     }
+
     public double calcularMontoToal(){
         double suma=0;
         for (Item p:this.items){
             suma+=p.calcularSubtotal();
         }
         return suma;
-    }
-    public Factura(Cabecera cabecera) {
-        this.cabecera = cabecera;
-        this.items = new ArrayList<>();
     }
 
     public Cabecera getCabecera() {
