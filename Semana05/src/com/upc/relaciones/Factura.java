@@ -18,7 +18,7 @@ public class Factura {
           this.items.add(item);
     }
 
-    public double calcularMontoToal(){
+    public double calcularMontoTotal(){
         double suma=0;
         for (Item p:this.items){
             suma+=p.calcularSubtotal();
