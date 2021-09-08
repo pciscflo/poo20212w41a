@@ -17,7 +17,9 @@ public class Factura {
     public void registrarItem(Item item){
           this.items.add(item);
     }
-
+    public double calcularIGV(){
+        return (Utilitario.IGV/(Utilitario.IGV+1))*calcularMontoTotal();
+    }
     public double calcularMontoTotal(){
         double suma=0;
         for (Item p:this.items){
