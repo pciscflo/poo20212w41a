@@ -9,13 +9,25 @@ public class Ejericio1 {
         Producto producto1 = new Producto("1002","Fanta",1.8);
         Producto producto2 = new Producto("1005","Leche Ideal",2.5);
         Producto producto3 = new Producto("1203", "Chocolate", 1.0);
-        Item item1 = new Item(1,3,producto1);
+        Item item1 = new Item(1,0,producto1);
         Item item2 = new Item(2, 1,producto2);
         Item item3 = new Item(3, 2,producto3);
         Factura factura1 = new Factura(cabecera);
-        factura1.registrarItem(item1);
-        factura1.registrarItem(item2);
-        factura1.registrarItem(item3);
+        try {
+            factura1.registrarItem(item1);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            factura1.registrarItem(item2);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            factura1.registrarItem(item3);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         System.out.println("Numero de Factura:" + factura1.getCabecera().getNumeroFactura());
         System.out.println("Numero de RUC:" + factura1.getCabecera().getRuc());
         System.out.println("Fecha:" + factura1.getCabecera().getFecha());

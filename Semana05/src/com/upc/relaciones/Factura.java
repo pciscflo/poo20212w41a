@@ -14,7 +14,8 @@ public class Factura {
         this.items = new ArrayList<>();
     }
 
-    public void registrarItem(Item item){
+    public void registrarItem(Item item) throws Exception {
+          item.validarCantidad();
           this.items.add(item);
     }
     public double calcularIGV(){

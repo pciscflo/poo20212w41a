@@ -8,6 +8,12 @@ public class Item {
     public Item() {
     }
 
+    public void validarCantidad() throws Exception {
+        if(cantidad<=0){
+            throw new Exception("La cantidad debe ser mayor a cero");
+        }
+    }
+
     public Item(int numeroItem, int cantidad, Producto producto) {
         this.numeroItem = numeroItem;
         this.cantidad = cantidad;
