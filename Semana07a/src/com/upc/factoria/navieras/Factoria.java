@@ -3,7 +3,7 @@ package com.upc.factoria.navieras;
 public class Factoria {
     public static Envio dameObjeto(String... argumentos){
         Envio envio=null;
-        switch (argumentos[0]){
+        switch (argumentos[0]){//0 es el tipo
             case "MA":
                 envio = new Maritimo(Integer.parseInt(argumentos[1]), Double.parseDouble(argumentos[2]),
                         Integer.parseInt(argumentos[3]), argumentos[4]);
