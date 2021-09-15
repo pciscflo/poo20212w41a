@@ -10,16 +10,16 @@ public class EjercicioGrupalMain {
         int codigo;
         JefeEnvios jefe = new JefeEnvios("Pepito");
 
-        Maritimo envioMar1 = new Maritimo(77777, 45.50, 5, "UPC Villa");
+        Envio envioMar1 = Factoria.dameObjeto("MA","77777", "45.50", "5", "UPC Villa");
         jefe.registrarEnvio(envioMar1);
 
-        Ultramaritimos envioUltra1 = new Ultramaritimos(88888, 358, 2, 345, "Lopez de Paz");
+        Envio envioUltra1 = Factoria.dameObjeto("UM","88888", "358", "2", "345", "Lopez de Paz");
         jefe.registrarEnvio(envioUltra1);
 
-        Maritimo envioMar2 = new Maritimo(99999, 77.70, 4, "Ferreiros S.A.");
+        Envio envioMar2 = Factoria.dameObjeto("MA","99999", "77.70", "42", "Ferreiros S.A.");
         jefe.registrarEnvio(envioMar2);
 
-        Maritimo envioMar3 = new Maritimo(99999, 100.50, 2, "Plaz VEA  Peru");
+        Envio envioMar3 = Factoria.dameObjeto("MA","99999", "100.50", "2", "Plaz VEA  Peru");
         jefe.registrarEnvio(envioMar3);
 
         List<Envio> envios1 = jefe.obtenerEnviosPorTipo(Maritimo.class);//hay otras formas de resolver
