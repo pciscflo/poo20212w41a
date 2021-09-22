@@ -2,6 +2,7 @@ package com.upc.mvc;
 
 public class Main {
     public static void main(String[] args) {
+        //código muy limpio
        Vista vista = new Vista();
        Administrador administrador = new Administrador("Lucho");
        Controlador controlador = new Controlador(vista,administrador); //MVC1
